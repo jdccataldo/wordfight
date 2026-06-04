@@ -1,0 +1,82 @@
+.btn {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 10px 16px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.1s, filter 0.1s;
+  image-rendering: pixelated;
+  outline: none;
+  position: relative;
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Pixel border via box-shadow */
+.primary {
+  background: #e63946;
+  color: #fff;
+  box-shadow:
+    -3px 0 0 #fff,
+    3px 0 0 #fff,
+    0 -3px 0 #fff,
+    0 3px 0 #fff,
+    -3px -3px 0 #1a1a2e,
+    3px -3px 0 #1a1a2e,
+    -3px 3px 0 #1a1a2e,
+    3px 3px 0 #1a1a2e,
+    6px 6px 0 #1a1a2e;
+}
+
+.love {
+  background: #e84393;
+  color: #fff;
+  box-shadow:
+    -3px 0 0 #fff,
+    3px 0 0 #fff,
+    0 -3px 0 #fff,
+    0 3px 0 #fff,
+    -3px -3px 0 #1a1a2e,
+    3px -3px 0 #1a1a2e,
+    -3px 3px 0 #1a1a2e,
+    3px 3px 0 #1a1a2e,
+    6px 6px 0 #1a1a2e;
+}
+
+.garbage {
+  background: #2b2d42;
+  color: #e63946;
+  box-shadow:
+    -3px 0 0 #e63946,
+    3px 0 0 #e63946,
+    0 -3px 0 #e63946,
+    0 3px 0 #e63946,
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000,
+    6px 6px 0 #000;
+}
+
+.ghost {
+  background: transparent;
+  color: #8d99ae;
+  box-shadow:
+    -3px 0 0 #8d99ae,
+    3px 0 0 #8d99ae,
+    0 -3px 0 #8d99ae,
+    0 3px 0 #8d99ae,
+    -3px -3px 0 #1a1a2e,
+    3px -3px 0 #1a1a2e,
+    -3px 3px 0 #1a1a2e,
+    3px 3px 0 #1a1a2e;
+}

@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 160px;
+  overflow-y: auto;
+  padding: 8px;
+  background: #0a0a16;
+  font-size: 8px;
+}
+
+.container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #4a4e69;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 6px;
+  opacity: 0.9;
+}
+
+.mine {
+  text-align: right;
+  flex-direction: row-reverse;
+  color: #edf2f4;
+}
+
+.theirs {
+  color: #8d99ae;
+}
+
+.accepted .word {
+  color: #2ecc71;
+}
+
+.rejected .word {
+  color: #4a4e69;
+  text-decoration: line-through;
+}
+
+.forbidden .word {
+  color: #f39c12;
+}
+
+.neutral .word {
+  color: #4a4e69;
+}
+
+.word {
+  letter-spacing: 1px;
+}
+
+.dmg {
+  color: #e63946;
+  font-size: 7px;
+  margin: 0 6px;
+}

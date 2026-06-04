@@ -1,0 +1,15 @@
+.badge {
+  font-size: 10px;
+  padding: 6px 16px;
+  letter-spacing: 3px;
+}
+
+.love {
+  color: #e84393;
+  box-shadow: -3px 0 0 #e84393, 3px 0 0 #e84393, 0 -3px 0 #e84393, 0 3px 0 #e84393;
+}
+
+.garbage {
+  color: #e63946;
+  box-shadow: -3px 0 0 #e63946, 3px 0 0 #e63946, 0 -3px 0 #e63946, 0 3px 0 #e63946;
+}

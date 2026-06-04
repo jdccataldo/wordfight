@@ -1,0 +1,211 @@
+.arena {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #0d0d1a;
+  min-height: 100vh;
+}
+
+/* ── TOP BAR ──────────────────────────────────────────────────────────────── */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #100820;
+  border-bottom: 4px solid #2b1a6b;
+  gap: 10px;
+}
+
+.playerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.topCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.playerInfoRight {
+  align-items: flex-end;
+}
+
+.playerName {
+  font-size: 7px;
+  color: #8d99ae;
+  letter-spacing: 1px;
+}
+
+.myName {
+  color: #f1c40f;
+}
+
+/* ── STAGE ────────────────────────────────────────────────────────────────── */
+.stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  overflow: hidden;
+  /* SNES-style gradient background */
+  background:
+    linear-gradient(
+      180deg,
+      #0a0318 0%,
+      #1a0530 30%,
+      #2b0a52 55%,
+      #1a0c3a 70%,
+      #0f0525 85%,
+      #0a0115 100%
+    );
+}
+
+/* Crowd silhouette strip at top */
+.crowd {
+  width: 100%;
+  height: 28px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #1a0c3a 0px, #1a0c3a 6px,
+      #2b1a6b 6px, #2b1a6b 10px,
+      #1a0c3a 10px, #1a0c3a 14px,
+      #3a1a8b 14px, #3a1a8b 16px
+    );
+  opacity: 0.7;
+}
+
+/* Fighters row */
+.fighters {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 16px;
+  position: relative;
+}
+
+.fighterLeft {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  filter: drop-shadow(4px 4px 0 rgba(0,0,0,0.6));
+}
+
+.fighterRight {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  filter: drop-shadow(-4px 4px 0 rgba(0,0,0,0.6));
+}
+
+/* SNES-style perspective floor */
+.stage::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #2b1a6b 0px, #2b1a6b 16px,
+      #1a0c3a 16px, #1a0c3a 32px
+    );
+  /* Simulate perspective by scaling */
+  clip-path: polygon(0% 40%, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.centerZone {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spectatorBadge {
+  font-size: 7px;
+  color: #4a4e69;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ── BOTTOM ───────────────────────────────────────────────────────────────── */
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #100820;
+  border-top: 4px solid #2b1a6b;
+}
+
+/* ── LOADING / WAITING ────────────────────────────────────────────────────── */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 10px;
+  color: #4a4e69;
+  letter-spacing: 3px;
+}
+
+.lobbyWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(180deg, #0a0318, #0d0d1a);
+}
+
+.waiting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 24px;
+  background: linear-gradient(180deg, #0a0318, #0d0d1a);
+}
+
+.waitingText {
+  font-size: 10px;
+  color: #8d99ae;
+  letter-spacing: 3px;
+  margin: 0;
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+.spectators {
+  font-size: 8px;
+  color: #4a4e69;
+  margin: 0;
+}
+
+.spectatorLabel {
+  font-size: 8px;
+  color: #4a4e69;
+  text-align: center;
+  padding: 6px;
+  letter-spacing: 3px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}

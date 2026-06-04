@@ -1,0 +1,29 @@
+.input {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  background: #0d0d1a;
+  color: #edf2f4;
+  border: none;
+  padding: 10px 12px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  box-shadow:
+    -3px 0 0 #8d99ae,
+    3px 0 0 #8d99ae,
+    0 -3px 0 #8d99ae,
+    0 3px 0 #8d99ae;
+}
+
+.input:focus {
+  box-shadow:
+    -3px 0 0 #e63946,
+    3px 0 0 #e63946,
+    0 -3px 0 #e63946,
+    0 3px 0 #e63946;
+}
+
+.input::placeholder {
+  color: #4a4e69;
+}

@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.preview {
+  background: #0d0d1a;
+  padding: 16px;
+  box-shadow:
+    -3px 0 0 #4a4e69,
+    3px 0 0 #4a4e69,
+    0 -3px 0 #4a4e69,
+    0 3px 0 #4a4e69;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.selectorLabel {
+  font-size: 8px;
+  color: #8d99ae;
+  letter-spacing: 2px;
+}
+
+.selectorControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.arrow {
+  font-family: var(--font-pixel);
+  background: #1a1a2e;
+  border: none;
+  color: #edf2f4;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+.arrow:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+.selectorValue {
+  font-size: 9px;
+  color: #edf2f4;
+  min-width: 80px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.colorGrid {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.colorSwatch {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4a4e69;
+  cursor: pointer;
+  padding: 0;
+}
+
+.colorActive {
+  border-color: #edf2f4;
+  box-shadow: 0 0 0 2px #e63946;
+}

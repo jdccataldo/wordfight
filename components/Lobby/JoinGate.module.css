@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 32px;
+  background: #0d0d1a;
+  max-width: 540px;
+  width: 100%;
+  box-shadow:
+    -4px 0 0 #4a4e69,
+    4px 0 0 #4a4e69,
+    0 -4px 0 #4a4e69,
+    0 4px 0 #4a4e69;
+}
+
+.badge {
+  font-size: 11px;
+  letter-spacing: 3px;
+  padding: 6px 18px;
+}
+
+.badgeLove {
+  color: #e84393;
+  box-shadow: -3px 0 0 #e84393, 3px 0 0 #e84393, 0 -3px 0 #e84393, 0 3px 0 #e84393;
+}
+
+.badgeGarbage {
+  color: #e63946;
+  box-shadow: -3px 0 0 #e63946, 3px 0 0 #e63946, 0 -3px 0 #e63946, 0 3px 0 #e63946;
+}
+
+.subtitle {
+  font-size: 8px;
+  color: #8d99ae;
+  margin: 0;
+}
+
+.question {
+  font-size: 10px;
+  color: #edf2f4;
+  margin: 0;
+}
+
+.title {
+  font-size: 11px;
+  color: #edf2f4;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.options {
+  display: flex;
+  gap: 16px;
+}
+
+.optionCard {
+  font-family: var(--font-pixel);
+  background: #1a1a2e;
+  border: none;
+  cursor: pointer;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 160px;
+  box-shadow: -3px 0 0 #4a4e69, 3px 0 0 #4a4e69, 0 -3px 0 #4a4e69, 0 3px 0 #4a4e69;
+  transition: transform 0.1s;
+}
+
+.optionCard:hover {
+  transform: translateY(-3px);
+  box-shadow: -3px 0 0 #edf2f4, 3px 0 0 #edf2f4, 0 -3px 0 #edf2f4, 0 3px 0 #edf2f4;
+}
+
+.optionIcon {
+  font-size: 28px;
+}
+
+.optionTitle {
+  font-size: 9px;
+  color: #edf2f4;
+  letter-spacing: 2px;
+}
+
+.optionDesc {
+  font-size: 7px;
+  color: #8d99ae;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fieldLabel {
+  font-size: 8px;
+  color: #8d99ae;
+  letter-spacing: 2px;
+}
+
+.inputError {
+  box-shadow: -3px 0 0 #e63946, 3px 0 0 #e63946, 0 -3px 0 #e63946, 0 3px 0 #e63946 !important;
+}
+
+.errorMsg {
+  font-size: 8px;
+  color: #e63946;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

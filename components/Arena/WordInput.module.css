@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.modePill {
+  font-size: 8px;
+  padding: 4px 8px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.love {
+  color: #e84393;
+  box-shadow: -2px 0 0 #e84393, 2px 0 0 #e84393, 0 -2px 0 #e84393, 0 2px 0 #e84393;
+}
+
+.garbage {
+  color: #e63946;
+  box-shadow: -2px 0 0 #e63946, 2px 0 0 #e63946, 0 -2px 0 #e63946, 0 2px 0 #e63946;
+}
+
+.input {
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  flex: 1;
+  background: #0d0d1a;
+  color: #edf2f4;
+  border: none;
+  padding: 12px 14px;
+  outline: none;
+  letter-spacing: 1px;
+  transition: box-shadow 0.1s;
+  box-shadow: -3px 0 0 #4a4e69, 3px 0 0 #4a4e69, 0 -3px 0 #4a4e69, 0 3px 0 #4a4e69;
+}
+
+.input:focus {
+  box-shadow: -3px 0 0 #8d99ae, 3px 0 0 #8d99ae, 0 -3px 0 #8d99ae, 0 3px 0 #8d99ae;
+}
+
+.flashHit {
+  box-shadow: -3px 0 0 #2ecc71, 3px 0 0 #2ecc71, 0 -3px 0 #2ecc71, 0 3px 0 #2ecc71 !important;
+  animation: flash-hit 0.4s ease-out;
+}
+
+.flashMiss {
+  box-shadow: -3px 0 0 #e63946, 3px 0 0 #e63946, 0 -3px 0 #e63946, 0 3px 0 #e63946 !important;
+  animation: flash-miss 0.4s ease-out;
+}
+
+.flashForbidden {
+  box-shadow: -3px 0 0 #f39c12, 3px 0 0 #f39c12, 0 -3px 0 #f39c12, 0 3px 0 #f39c12 !important;
+  animation: flash-shake 0.4s ease-out;
+}
+
+.sendBtn {
+  font-family: var(--font-pixel);
+  background: #2b2d42;
+  color: #edf2f4;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sendBtn:hover:not(:disabled) {
+  background: #e63946;
+}
+
+.sendBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+@keyframes flash-hit {
+  0% { background: #0d4a1a; }
+  100% { background: #0d0d1a; }
+}
+
+@keyframes flash-miss {
+  0% { background: #4a0d0d; }
+  100% { background: #0d0d1a; }
+}
+
+@keyframes flash-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}

@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.title {
+  font-size: 14px;
+  color: #edf2f4;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.modes {
+  display: flex;
+  gap: 16px;
+}
+
+.modeCard {
+  font-family: var(--font-pixel);
+  background: #1a1a2e;
+  border: none;
+  cursor: pointer;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 160px;
+  box-shadow:
+    -3px 0 0 #4a4e69,
+    3px 0 0 #4a4e69,
+    0 -3px 0 #4a4e69,
+    0 3px 0 #4a4e69;
+  transition: transform 0.1s;
+}
+
+.modeCard:hover {
+  transform: translateY(-2px);
+}
+
+.modeActive {
+  box-shadow:
+    -3px 0 0 #e84393,
+    3px 0 0 #e84393,
+    0 -3px 0 #e84393,
+    0 3px 0 #e84393;
+  background: #2a0a1f;
+}
+
+.modeActiveGarbage {
+  box-shadow:
+    -3px 0 0 #e63946,
+    3px 0 0 #e63946,
+    0 -3px 0 #e63946,
+    0 3px 0 #e63946;
+  background: #1a0a0a;
+}
+
+.modeIcon {
+  font-size: 28px;
+  color: #edf2f4;
+}
+
+.modeName {
+  font-size: 9px;
+  color: #edf2f4;
+  letter-spacing: 2px;
+}
+
+.modeDesc {
+  font-size: 7px;
+  color: #8d99ae;
+  text-align: center;
+  line-height: 1.6;
+}

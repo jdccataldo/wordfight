@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 32px;
+  background: #0d0d1a;
+  max-width: 480px;
+  width: 100%;
+  box-shadow:
+    -4px 0 0 #4a4e69,
+    4px 0 0 #4a4e69,
+    0 -4px 0 #4a4e69,
+    0 4px 0 #4a4e69;
+}
+
+.modeBadge {
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 8px 20px;
+}
+
+.modeLove {
+  color: #e84393;
+  box-shadow:
+    -3px 0 0 #e84393,
+    3px 0 0 #e84393,
+    0 -3px 0 #e84393,
+    0 3px 0 #e84393;
+}
+
+.modeGarbage {
+  color: #e63946;
+  box-shadow:
+    -3px 0 0 #e63946,
+    3px 0 0 #e63946,
+    0 -3px 0 #e63946,
+    0 3px 0 #e63946;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 8px;
+  color: #8d99ae;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.urlBox {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.url {
+  font-size: 8px;
+  color: #edf2f4;
+  background: #1a1a2e;
+  padding: 8px;
+  flex: 1;
+  word-break: break-all;
+  letter-spacing: 0;
+}
+
+.copyBtn {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  background: #2b2d42;
+  color: #edf2f4;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.copyBtn:hover {
+  background: #e63946;
+}
+
+.pinSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.pinDisplay {
+  display: flex;
+  gap: 8px;
+}
+
+.pinDigit {
+  font-size: 28px;
+  color: #f1c40f;
+  background: #1a1a2e;
+  padding: 12px 16px;
+  box-shadow:
+    -3px 0 0 #f1c40f,
+    3px 0 0 #f1c40f,
+    0 -3px 0 #f1c40f,
+    0 3px 0 #f1c40f;
+  line-height: 1;
+}
+
+.pinHint {
+  font-size: 7px;
+  color: #4a4e69;
+  text-align: center;
+  margin: 0;
+}
+
+.waiting {
+  font-size: 10px;
+  color: #8d99ae;
+}
+
+.waitingDots::after {
+  content: '';
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0% { content: ''; }
+  25% { content: '.'; }
+  50% { content: '..'; }
+  75% { content: '...'; }
+}
+
+.spectators {
+  font-size: 9px;
+  color: #4a4e69;
+}

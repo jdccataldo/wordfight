@@ -1,0 +1,28 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 50;
+}
+
+.number {
+  font-size: 80px;
+  color: #f1c40f;
+  animation: pop-in 0.4s ease-out;
+  text-shadow: 6px 6px 0 #1a1a2e;
+}
+
+.fight {
+  font-size: 40px;
+  color: #e63946;
+  animation: pop-in 0.3s ease-out;
+}
+
+@keyframes pop-in {
+  0% { transform: scale(2); opacity: 0; }
+  60% { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}

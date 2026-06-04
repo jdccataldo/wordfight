@@ -1,0 +1,50 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 60;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 32px;
+  background: #0d0d1a;
+  box-shadow:
+    -4px 0 0 #f1c40f,
+    4px 0 0 #f1c40f,
+    0 -4px 0 #f1c40f,
+    0 4px 0 #f1c40f;
+}
+
+.result {
+  font-size: 22px;
+  margin: 0;
+  text-shadow: 4px 4px 0 #1a1a2e;
+}
+
+.win {
+  color: #f1c40f;
+  animation: pulse 0.8s ease-in-out infinite;
+}
+
+.lose {
+  color: #e63946;
+}
+
+.winnerName {
+  font-size: 11px;
+  color: #8d99ae;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}

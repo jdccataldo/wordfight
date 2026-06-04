@@ -1,0 +1,28 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.symbol {
+  position: absolute;
+  font-size: 20px;
+  animation: burst 0.9s ease-out forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes burst {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  60% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.3) translateY(-30px);
+    opacity: 0;
+  }
+}
